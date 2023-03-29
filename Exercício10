@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n, i, num, maior = 0;
+
+    printf("Digite a quantidade de numeros: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        printf("Digite o numero %d: ", i);
+        scanf("%d", &num);
+
+        if (num > maior) {
+            maior = num;
+        }
+    }
+
+    printf("O maior numero digitado foi: %d\n", maior);
+
+    return 0;
+}
